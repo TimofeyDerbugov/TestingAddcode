@@ -34,7 +34,7 @@ function validateForm(event) {
   const nameCount = nameInput.value.length;
   const commentCount = comInput.value.length;
   // Валидация полей ввода
-  if (nameCount <= 2 || !validateName(nameInput.value)) {
+  if (nameCount < 2 || !validateName(nameInput.value)) {
     nameInput.style.border = '1px solid #E74A3B';
     // alert('Write correct name.');
     return;
